@@ -9,13 +9,23 @@ const on_press = () => {
         let user = String(prompt("Snake/Gun/Water? ")).toLowerCase()
         const computer = ["snake","water","gun"];  
         const random_computer_move = computer[random_num];
+        const upper = random_computer_move.toUpperCase();
         let input = document.querySelector("h1");
-        if (user == random_computer_move){
-        input.innerHTML ="You won man ! Congratulations";
+        if (user == computer[0] && random_computer_move == computer[1]){
+        input.innerHTML ="You won man ! Congratulations " + upper;
+        }
+        else if(user == computer[1] && random_computer_move == computer[2]){
+            input.innerHTML ="You won man ! Congratulations " + upper;
+        }
+        else if(user == computer[2] && random_computer_move == computer[0]){
+            input.innerHTML ="You won man ! Congratulations " + upper;
+        }
+        else if(user == random_computer_move){
+            input.innerHTML ="Oh no ! It is a Draw";
         }
         else{
             input.innerHTML ="Try again";
-            input.innerHTML = "Bad Luck"
+            input.innerHTML = "Bad Luck -> " + upper;
         }
         let btn = document.querySelector("button");
         btn.innerHTML = "Play Again";
