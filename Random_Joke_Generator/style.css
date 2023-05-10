@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background:url(https://cdn.pixabay.com/photo/2023/04/13/02/20/waterfall-7921517_960_720.jpg),no-repeat;
     background-size: cover;
