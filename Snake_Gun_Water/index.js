@@ -1,4 +1,5 @@
-    const on_press = () => {
+    let a = document.querySelector("button")
+    a.onclick = () => {
     const user_confirmation = confirm("Do you really want to play this game")
     if(user_confirmation == true){
         alert("This is a Snake Water Game\nIn this game your are going to play with the computer and match the value Snake,Gun,Water.")
