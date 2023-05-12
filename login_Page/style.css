@@ -7,7 +7,9 @@
     flex-direction: column;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+ 
 }
 .container{
     background: url(https://img.freepik.com/premium-vector/fantasy-wild-jungle-forest-with-plants_33070-5426.jpg);
@@ -36,4 +38,12 @@ button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.email-name{
+    height: 20px;
+    font-size: 18x;
+}
+.password{
+    font-size: 18px;
+    height: 20px;
 }
