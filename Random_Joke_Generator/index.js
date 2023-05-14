@@ -8,3 +8,5 @@ const on_press = () => {
     console.log(randomInt);
     current_joke.innerText =  Jokes[randomInt];
 }
+
+ let arr  = [2345678,1234567,3246789];
