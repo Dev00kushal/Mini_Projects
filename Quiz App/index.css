@@ -26,7 +26,7 @@
 
 .answer-1{
 border: 1px solid wheat;
-height: 80px;
+height: 55px;
 border-radius: 20px;
 font-size:20px;
 display: flex;
@@ -36,7 +36,7 @@ cursor: pointer;
 }
 .answer-2{
     border: 1px solid wheat;
-    height: 80px;
+    height: 55px;
     cursor: pointer;
     border-radius: 20px;
     font-size:20px;
@@ -45,7 +45,7 @@ cursor: pointer;
 }
 .answer-3{
     border: 1px solid wheat;
-    height: 80px;
+    height: 55px;
     cursor: pointer;
     border-radius: 20px;
     display: flex;
@@ -89,5 +89,8 @@ font: bold;
   display: flex;
   align-items: center;
   flex-direction: column; 
+  display: none;
+}
+.hh{
   display: none;
 }

@@ -7,23 +7,84 @@ let  option_5 = document.getElementById("opt-5")
 let  option_6 = document.getElementById("opt-6")
 const url = "https://quizapi.io/api/v1/questions?apiKey=FylkAmzCcCtZZds4y0raA7gkD6tkQR2BYOcvTQNG&category=linux&difficulty=Easy&limit=10&tags=Linux"
 
-const getQuiz = () =>{  
+const getQuiz = () => {  
     fetch(url)
     .then((data)=> data.json())
     .then((data)=> {
             for (let i = 0; i < 10; i++) {
             let ques = data[i].question
             let ans =  data[i].answers   
-            console.log(data)
-            console.log(data[i].correct_answer)
-            question.innerHTML = "Q. " + ques;
-            option_1.innerHTML = "a) " + ans.answer_a ;
-            option_2.innerHTML = "b) " + ans.answer_b ;
-            option_3.innerHTML = "c) " + ans.answer_c ;
-            option_4.innerHTML = "c) " + ans.answer_d ;
-            option_5.innerHTML = "c) " + ans.answer_e ;
-            option_6.innerHTML = "c) " + ans.answer_f ;
-            break
+            let correct_ans = data[i].correct_answer
+            if(ans.answer_a == null){
+                question.innerHTML = "Q. " + ques;
+                option_1.style.display = "none";
+                option_2.innerHTML = "b) " + ans.answer_b ;
+                option_3.innerHTML = "c) " + ans.answer_c ;
+                option_4.innerHTML = "d) " + ans.answer_d ;
+                option_5.innerHTML = "e) " + ans.answer_e ;
+                option_6.innerHTML = "f) " + ans.answer_f ;
+                break 
+            }
+            else if(ans.answer_b == null){
+                question.innerHTML = "Q. " + ques;
+                option_1.innerHTML = "a) " + ans.answer_a ;
+                option_2.style.display = "none";
+                option_3.innerHTML = "c) " + ans.answer_c ;
+                option_4.innerHTML = "d) " + ans.answer_d ;
+                option_5.innerHTML = "e) " + ans.answer_e ;
+                option_6.innerHTML = "f) " + ans.answer_f ;
+                break 
+            }
+            else if(ans.answer_c == null){
+                question.innerHTML = "Q. " + ques;
+                option_1.innerHTML = "a) " + ans.answer_a ;
+                option_2.innerHTML = "b) " + ans.answer_b ;
+                option_3.style.display = "none";
+                option_4.innerHTML = "d) " + ans.answer_d ;
+                option_5.innerHTML = "e) " + ans.answer_e ;
+                option_6.innerHTML = "f) " + ans.answer_f ;
+                break 
+            }
+            else if(ans.answer_d == null){
+                question.innerHTML = "Q. " + ques;
+                option_1.innerHTML = "a) " + ans.answer_a ;
+                option_2.innerHTML = "b) " + ans.answer_b ;
+                option_3.innerHTML = "c) " + ans.answer_c ;
+                option_4.style.display = "none";
+                option_5.innerHTML = "d) " + ans.answer_e ;
+                option_6.innerHTML = "f) " + ans.answer_f ;
+                 break                
+            }
+            else if(ans.answer_e == null){
+               question.innerHTML = "Q. " + ques;
+               option_1.innerHTML = "a) " + ans.answer_a ;
+               option_2.innerHTML = "b) " + ans.answer_b ;
+               option_3.innerHTML = "c) " + ans.answer_c ;
+               option_4.innerHTML = "d) " + ans.answer_d ;
+               option_5.style.display = "none";
+               option_6.innerHTML = "f) " + ans.answer_f ;
+                break 
+            }
+            else if(ans.answer_f == null){      
+               question.innerHTML = "Q. " + ques;
+               option_1.innerHTML = "a) " + ans.answer_a ;
+               option_2.innerHTML = "b) " + ans.answer_b ;
+               option_3.innerHTML = "c) " + ans.answer_c ;
+               option_4.innerHTML = "d) " + ans.answer_d ;
+               option_5.innerHTML = "e) " + ans.answer_e ;
+               option_6.style.display = "none";
+               break
+            }
+            else{
+                question.innerHTML = "Q. " + ques;
+                option_1.innerHTML = "a) " + ans.answer_a ;
+                option_2.innerHTML = "b) " + ans.answer_b ;
+                option_3.innerHTML = "c) " + ans.answer_c ;
+                option_4.innerHTML = "d) " + ans.answer_d ;
+                option_5.innerHTML = "e) " + ans.answer_e ;
+                option_6.innerHTML = "f) " + ans.answer_f ;
+                break 
+            }
             }
     })
         .catch((error)=> console.log(error))
