@@ -24,7 +24,7 @@
   justify-content: space-evenly;
 }
 
-.answer-1{
+.answer_a{
 border: 1px solid wheat;
 height: 55px;
 border-radius: 20px;
@@ -34,7 +34,7 @@ align-items: center;
 justify-content: start;
 cursor: pointer;
 }
-.answer-2{
+.answer_b{
     border: 1px solid wheat;
     height: 55px;
     cursor: pointer;
@@ -43,7 +43,34 @@ cursor: pointer;
     display: flex;
     align-items: center;
 }
-.answer-3{
+.answer_d{
+    border: 1px solid wheat;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size:20px;
+    display: flex;
+    align-items: center;
+}
+.answer_e{
+    border: 1px solid wheat;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size:20px;
+    display: flex;
+    align-items: center;
+}
+.answer_f{
+    border: 1px solid wheat;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size:20px;
+    display: flex;
+    align-items: center;
+}
+.answer_c{
     border: 1px solid wheat;
     height: 55px;
     cursor: pointer;
@@ -53,15 +80,27 @@ cursor: pointer;
     font-size:20px;
     
 }
-.answer-1:hover{
+.answer_a:hover{
  background: rgb(15, 82, 111);
 
 }
-.answer-2:hover{
+.answer_b:hover{
   background: rgb(15, 82, 111);
 
 }
-.answer-3:hover{
+.answer_c:hover{
+  background: rgb(15, 82, 111);
+
+}
+.answer_d:hover{
+ background: rgb(15, 82, 111);
+
+}
+.answer_e:hover{
+  background: rgb(15, 82, 111);
+
+}
+.answer_f:hover{
   background: rgb(15, 82, 111);
 
 }
@@ -89,8 +128,5 @@ font: bold;
   display: flex;
   align-items: center;
   flex-direction: column; 
-  display: none;
-}
-.hh{
   display: none;
 }
