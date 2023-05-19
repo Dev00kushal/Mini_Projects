@@ -58,6 +58,9 @@ const main = () => {
             }
             let correct_ans = data[0].correct_answer  
             console.log(correct_ans)
+            if(correct_ans == null){
+                location.reload()
+            }
             const all_option = [option_1,option_2,option_3,option_4,option_5,option_6];
             for(let i = 0 ; i <all_option.length ; i++){
                 all_option[i].addEventListener("click" ,()=>{
