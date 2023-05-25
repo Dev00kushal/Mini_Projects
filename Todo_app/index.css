@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background: darkolivegreen; 
+    color: white;
+}
+.hawa{
+text-decoration: underline;
+}
+.content input{
+    height: 40px;
+    width: 50%;
+    font-family: system-ui;
+    color: blueviolet;
+    font-size: 25px;
+}
+.content button {
+    height: 50px;
+    width: max-content;
+    border: 2px solid lightseagreen;
+    background: rgb(9, 94, 90);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.content button:hover {
+    cursor: pointer;
+    background: lightseagreen;;
+}
+.content{
+    display: flex;
+    justify-content: 
+    center;
+    align-items: center ;
+}
+.tasks  {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content li{
+    list-style: none;
+    border: 2px solid white;
+    width: fit-content;
+}
+.tasks li{
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width:auto;
+    list-style: none;
+}
+.container{
+    margin-top: 200px;
+}
