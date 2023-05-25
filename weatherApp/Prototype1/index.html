@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP | CHECK THE WEATHER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Weather-rain-thunderstorm.svg/1839px-Weather-rain-thunderstorm.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+    <h1 style="text-align: center; text-decoration: underline purple;" ><i>Weather App</i></h1>
+    <div class="main">
+        <div class="every">
+            <div class="search-box">
+                <input autocomplete="off" placeholder="Enter your city"  type="search" name="search" id="search" >
+                <i onclick="weather(city)" id="search_btn" class="fa fa-search"></i>      
+            </div>  
+            <div class="temp">
+                  <h1 id="temp"> </h1>
+                  </div>
+            <div class="description">
+                  <h1 id="weather_status"> </h1>
+                  </div>
+                  <div class="wind">
+                        <h1 id="wind"> </h1>
+                        </div>
+        </div>
+        </div>
+
+  
+    <script defer src="index.js"></script>
+</body>
+</html>
